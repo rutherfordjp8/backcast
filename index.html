@@ -35,18 +35,18 @@
 
       // var videos = new Videos(window.exampleVideoData);
 
-      console.log('hit');
-      var videoList = [];
-      _.each(window.exampleVideoData, function(vid){
-        //new VideoListEntryView({model: vid});
-        videoList.push(new Video(vid));
-      });
+      // console.log('hit');
+      // var videoList = [];
+      // _.each(window.exampleVideoData, function(vid){
+      //   //new VideoListEntryView({model: vid});
+      //   videoList.push(new Video(vid));
+      // });
 
-      var videos = new Videos(videoList);
-      console.log(videos)
+      var videos = new Videos(window.exampleVideoData);
+      console.log(videos);
       new VideoListView({el: $('.list'), collection: videos});
 
-
+      console.log(videos);
     });
   </script>
 

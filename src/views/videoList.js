@@ -21,10 +21,10 @@ var VideoListView = Backbone.View.extend({
 
     // console.log(this.collection);
     var that = this;
-    _.each(coll.collection.models, function(mod){
+    _.each(coll.collection.models, function(vid) {
       //console.log(mod);
-      that.addChild(mod);
-    })
+      that.addChild(vid);
+    });
 
 
   },
@@ -41,7 +41,6 @@ var VideoListView = Backbone.View.extend({
 
   addChild: function(vid) {
     //console.log(vid);
-    var vid = new Video(vid);
     var entry = new VideoListEntryView({model: vid});
     this.$el.append(entry);
   },
