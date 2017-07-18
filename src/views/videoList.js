@@ -42,7 +42,8 @@ var VideoListView = Backbone.View.extend({
   addChild: function(vid) {
     //console.log(vid);
     var entry = new VideoListEntryView({model: vid});
-    this.$el.append(entry);
+    //console.log(entry);
+    this.$el.append(entry.$el);
   },
 
   template: templateURL('src/templates/videoList.html')

@@ -4,8 +4,8 @@ var Video = Backbone.Model.extend({
     // override youtube's complex id field
     //console.log(video);
     this.set('id', video.id.videoId);
-    this.set('description', video.snippet.description);
-    this.set('title', video.snippet.channelTitle);
+    this.set('video-list-entry-detail', video.snippet.description);
+    this.set('video-list-entry-title', video.snippet.channelTitle);
 
 
   },
